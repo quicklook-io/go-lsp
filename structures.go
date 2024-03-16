@@ -39,6 +39,13 @@ type Location struct {
 	Range Range       `json:"range"`
 }
 
+type LocationLink struct {
+	OriginSelectionRange Range       `json:"originSelectionRange"`
+	TargetURI            DocumentURI `json:"targetUri"`
+	TargetRange          Range       `json:"targetRange"`
+	TargetSelectionRange Range       `json:"targetSelectionRange"`
+}
+
 type Diagnostic struct {
 	/**
 	 * The range at which the message applies.
